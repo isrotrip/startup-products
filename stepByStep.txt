@@ -1,0 +1,21 @@
+1. Setup Awal + Sequelize
+  - npm init -y (inisialisasi package.json)
+  - install express pg sequelize ejs (install dependencies)
+  - buat .gitignore (biar ngga ke push ke respository github)
+  - pindah branch ke nama kalian masing-masing (sesuai fitur)
+  - inisialisasi sequelize template (sequelize init)
+  - config disesuaikan
+  - buat database sesuai config
+  - buat model + migration
+  - buat migration sesuai kebutuhan
+  - buat file seeder
+  - edit models sesuai yg dibutuhkan
+
+2. express + ejs
+  - membuat app
+  - membuat routers
+  - membuat controllers
+  - membuat ejs (kalau edit jangan di populate datanya)
+
+3. Pasangkan models
+  - jangan lupa assosiasinya

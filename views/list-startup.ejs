@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Startup</title>
+</head>
+<body>
+  <table border>
+    <tr>
+      <th>Name</th>
+      <th>Business</th>
+      <th>Born Year</th>
+      <th>Products</th>
+      <th>Actions</th>
+    </tr>
+    <% for (let i = 0; i < startups.length; i++) { %> 
+      <tr>
+        <td><%= startups[i].name %></td>
+        <td><%= startups[i].business %></td>
+        <td><%= startups[i].bornYear %></td>
+        <td>
+          <ul>
+          <% for (let j = 0; j < startups[i].products.length; j++) { %>
+              <li>
+                <%= startups[i].products[j].name %>
+              </li>
+            <% } %>
+          </ul>
+        </td>
+        <td>
+          <a href="/products/<%= startups[i].id %>/create">Create Product</a>
+        </td>
+      </tr>
+    <% } %>
+  </table>
+</body>
+</html>
